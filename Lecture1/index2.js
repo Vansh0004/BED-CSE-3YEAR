@@ -30,4 +30,7 @@ someTask().then((data) => {
 .catch((err) => {
     console.log(err)
 })
+process.nextTick(()=>{
+    console.log("next tick")
+})
 console.log("end");
